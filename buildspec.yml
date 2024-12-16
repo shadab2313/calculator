@@ -5,6 +5,7 @@ phases:
     commands:
       - echo run npm install
       - npm cache clean --force
+      - npm install react-scripts
       - npm install -g npm@10
   build:
     commands:
