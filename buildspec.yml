@@ -4,7 +4,9 @@ phases:
   install:
     commands:
       - echo run npm install
-      - npm install
+      - npm cache clean --force
+      - rm package-lock.json
+      - npm install -g npm@10
   build:
     commands:
       - echo Build started on `date`
